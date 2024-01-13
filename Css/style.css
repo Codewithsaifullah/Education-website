@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.logo img{
+    margin-left: 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    width: 85px;
+}
+
+
+.navlist{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+    margin: 0px 4px;
+    padding: 18px 30px;
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.navlist li a:hover{
+    text-decoration: underline;
+    font-size: 21px;
+    color: grey;
+    font-weight: bolder;
+}
+
+.search-box{
+    width: 30%;
+    margin-right: 30px;
+    text-align: right;
+}
+
+#search{
+    border: 2px solid white;
+    border-radius: 13px;
+    width: 167px;
+}
+
+.background{
+    background: rgb(0, 0, 0, 0.7) url(../Assets/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+}
+
+.bg{
+    background-blend-mode: darken;
+
+}
+
+.btn{
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    background: none;
+    margin: 5px 3px;
+    padding: 5px 23px;
+    border-radius:20px;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+.btn-sm{
+    font-size: 16px;
+    padding: 1px 5px;
+    border-radius:15px;
+
+}
+
+.firstSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paras{
+    width: 75%;
+    padding: 135px;
+    color: white;
+}
+
+.image{
+    width: 30%;
+}
+
+.image img{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.text-big{
+    font-size: 40px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.S-section{
+    margin-top: 50px;
+}
+
+.sm{
+    margin-top: 25px;
+}
+
+.section{
+    display: flex;
+    /* height: 300px; */
+    width: 80%;
+    margin: auto;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.thumb{
+    width: 35%;
+}
+
+.thumb img{
+    width: 250px;
+    margin: 23px;
+    height: 200px;
+}
+
+.title{
+    margin-bottom: 5px;
+}
+
+.contact{
+    background-color: #fffcf8;
+    height: auto;
+    margin-top: 50px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+}
+
+.form-list{
+    margin: 8px 18px;
+    padding: 5px 5px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.btn-dark{
+    width: 103px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    border-color: black;
+    margin-bottom: 18px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 26px;
+}
+
+.footer-text{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    margin: 5px 3px;
+    height: 4px;
+    background-color: white;
+    color: white;
+
+}
+
+@media only screen and (max-width: 1025px) {
+    body{
+        width: auto;
+    }
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        transition: all 0.17s ease-out;
+        flex-direction: column;
+        height: 450px;
+    }
+    #search{
+        width: 100%;
+    }
+    .search-box{
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    .burger{
+        display: block;
+    }
+    .image{
+        justify-content: center;
+        display: flex;
+    }
+    .n-h-resp{
+        height: 70px;
+    }
+    .v-h-resp{
+        opacity: 0;
+    }
+    .main-box{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+
+    .paras {
+        padding: 0px;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .center{
+        display: block;
+        margin: auto;
+    }
+    .thumb{
+        width: auto;
+        margin: auto;
+        display: block;
+    }
+    .m-b{
+        margin-bottom: 12px;
+    }
+    .footer-text{
+        text-align: center;
+    }
+
+
+}
+
+
+
